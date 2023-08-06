@@ -5,6 +5,7 @@ var path = require('path');
 var compression = require('compression');
 
 //Compress all requests
+app.use(compression());
 
 //Serve static files
 app.use('/', express.static(path.resolve(__dirname , './GMAEWAL')));
