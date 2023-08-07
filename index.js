@@ -8,7 +8,7 @@ var compression = require('compression');
 app.use(compression());
 
 //Serve static files
-app.use('/', express.static(path.resolve(__dirname , './GMAEWAL')));
+app.use('/', express.static(path.resolve(__dirname , './game')));
 
 //Serve the compressed version of Unity files
 
