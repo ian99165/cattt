@@ -3,28 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | OO</title>
+    <title>Unity WebGL Player | TSS</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <style>
-      body {
-          margin: 0;
-          padding: 0;
-          background-color: rgb(87, 87, 87);
-          overflow: hidden;
-      }
-  
-      #unity-container {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-      }
-  
-      #unity-canvas {
-          display: block;
-      }
-  </style>  
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -39,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">OO</div>
+        <div id="unity-build-title">TSS</div>
       </div>
     </div>
     <script>
@@ -75,14 +56,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Game.loader.js";
+      var loaderUrl = buildUrl + "/cattt.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Game.data",
-        frameworkUrl: buildUrl + "/Game.framework.js",
-        codeUrl: buildUrl + "/Game.wasm",
+        dataUrl: buildUrl + "/cattt.data",
+        frameworkUrl: buildUrl + "/cattt.framework.js",
+        codeUrl: buildUrl + "/cattt.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "OO",
+        productName: "TSS",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -112,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1280px";
-        canvas.style.height = "720px";
+        canvas.style.width = "1600px";
+        canvas.style.height = "900px";
       }
 
       loadingBar.style.display = "block";
