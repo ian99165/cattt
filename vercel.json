@@ -1,4 +1,7 @@
 {
-    "builds": [{ "src": "index.js", "use": "@vercel/node" }],
-    "routes": [{ "src": "(.*)", "dest": "index.js" }]
-  }
+  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+  "routes": [
+    { "src": "(.*\\.wasm)", "headers": { "Content-Type": "application/wasm" } },
+    { "src": "(.*)", "dest": "index.js" }
+  ]
+}
