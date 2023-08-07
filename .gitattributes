@@ -1,5 +1,0 @@
-# Specify MIME types for specific file extensions
-*.wasm   application/wasm
-*.js     application/javascript
-*.html   text/html
-# Add more file extensions and corresponding MIME types as needed
